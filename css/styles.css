@@ -536,16 +536,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .scroll-btn {
-    background-color: #ffffff;
-    border-radius: 50%;
-    border: none;
     width: 38px;
     height: 38px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    margin-left: 14px;
-    fill: #fd9222;
   }
 }
 
