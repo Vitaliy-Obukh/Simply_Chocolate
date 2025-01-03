@@ -54,14 +54,14 @@
             <ul class="list-social-link-header">
               <li>
                 <a href="">
-                  <svg class="ison-social-link" width="24" height="24">
+                  <svg class="icon-social-link" width="24" height="24">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a href="">
-                  <svg class="ison-social-link" width="24" height="24">
+                  <svg class="icon-social-link" width="24" height="24">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </a>
@@ -129,8 +129,8 @@
             of pure delight!
           </h1>
           <div class="box-button-hero">
-            <button class="button-hero">Buy now</button>
-            <a class="link-hero" href="#">How it’s made</a>
+            <button class="button-hero" data-modal-open>Buy now</button>
+            <a class="link-hero" href="#how-its-made">How it’s made</a>
             <div class="box-scroll">
               <a class="link-scroll-btn"
                 >scroll down
@@ -251,7 +251,7 @@
                   <button class="btn-overlay-chocolate" type="button">
                     chocolate
                   </button>
-                  <a href="" class="link-overlay">the benefits</a>
+                  <a href="#benefits" class="link-overlay">the benefits</a>
                 </div>
                 <p class="description-overlay">
                   Milk chocolate is a solid chocolate confectionery containing
@@ -296,7 +296,7 @@
                 <h3 class="title-overlay">Milk</h3>
                 <div class="box-overlay-link">
                   <button class="btn-overlay-milk" type="button">milk</button>
-                  <a href="" class="link-overlay">the benefits</a>
+                  <a href="#benefits" class="link-overlay">the benefits</a>
                 </div>
                 <p class="description-overlay">
                   Milk is a white liquid food produced by the mammary glands of
@@ -342,7 +342,7 @@
                 <h3 class="title-overlay">Nuts</h3>
                 <div class="box-overlay-link">
                   <button class="btn-overlay-nuts" type="button">nuts</button>
-                  <a href="" class="link-overlay">the benefits</a>
+                  <a href="#benefits" class="link-overlay">the benefits</a>
                 </div>
                 <p class="description-overlay">
                   Almonds, pistachios, and walnuts are some types of nuts that
@@ -390,7 +390,7 @@
                   <button class="btn-overlay-semi" type="button">
                     sweet chocolate
                   </button>
-                  <a href="" class="link-overlay">the benefits</a>
+                  <a href="#benefits" class="link-overlay">the benefits</a>
                 </div>
                 <p class="description-overlay">
                   Semi-sweet chocolate has a cocoa solid content of 35 to 65%.
@@ -536,7 +536,7 @@
                 wafer, covered in a thin layer chocolate.
               </p>
             </li>
-            <li class="comment-loved">
+            <li class="comment-loved mobile-none">
               <picture>
                 <source
                   media="(min-width: 768px) and (max-width: 1157px)"
@@ -567,7 +567,7 @@
                 is good.
               </p>
             </li>
-            <li class="comment-loved">
+            <li class="comment-loved tablet-none">
               <picture>
                 <source
                   media="(min-width: 1158px)"
@@ -590,6 +590,23 @@
                 chocolate and the creaminess inside. The wafer is soft but
                 crunchy.
               </p>
+            </li>
+          </ul>
+          <ul class="list-rectangl">
+            <li class="rectangl">
+              <svg class="icon-rectangl" width="23" height="13">
+                <use href="./images/icons.svg#icon-rectangle"></use>
+              </svg>
+            </li>
+            <li class="rectangl">
+              <svg class="icon-rectangl-one" width="13" height="13">
+                <use href="./images/icons.svg#icon-rectangle-one"></use>
+              </svg>
+            </li>
+            <li class="rectangl">
+              <svg class="icon-rectangl-one" width="13" height="13">
+                <use href="./images/icons.svg#icon-rectangle-one"></use>
+              </svg>
             </li>
           </ul>
           <a href="" class="link-comment">Leave a review</a>
@@ -641,20 +658,122 @@
             </ul>
           </nav>
           <div class="box-form-footer">
-            <label class="form-label-footer">
-              <input
-                type="text"
-                class="form-input-footer"
-                placeholder="Enter your email"
-                name="user-email"
-                autofocus
-              />
-            </label>
-            <button type="submit" class="button-footer">Subscribe</button>
+            <form class="form-footer">
+              <label class="form-label-footer">
+                <input
+                  type="text"
+                  class="form-input-footer"
+                  placeholder="Enter your email"
+                  name="user-email"
+                />
+              </label>
+              <button type="submit" class="button-footer">Subscribe</button>
+            </form>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- ========= Modal overlay ========= -->
+    <div class="modal-overlay" data-modal>
+      <div class="overlay">
+        <button
+          id="close-modal"
+          class="close-modal"
+          type="button"
+          data-modal-close
+        >
+          <svg class="icon-close-modal" width="24" height="24">
+            <use href="./images/icons.svg#icon-close-mobile-menu"></use>
+          </svg>
+        </button>
+        <p class="title-form-overlay">
+          Leave a review about <span class="corrent-text">our chocolate</span>
+        </p>
+        <form action="" class="form-overlay">
+          <div class="group-form">
+            <label for="user-name" class="label-form">Name</label>
+            <div class="box-info-user">
+              <input
+                id="user-name"
+                type="text"
+                class="input-form"
+                name="user-name"
+                placeholder=""
+                required
+              />
+              <svg class="icon-name" width="24" height="24">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="group-form">
+            <label for="user-email" class="label-form">Email</label>
+            <div class="box-info-user">
+              <input
+                id="user-email"
+                type="text"
+                class="input-form"
+                name="user-email"
+                placeholder=""
+                required
+              />
+              <svg class="icon-name" width="24" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="group-form">
+            <label for="user-phone" class="label-form">Phone number</label>
+            <div class="box-info-user">
+              <input
+                id="user-phone"
+                type="text"
+                class="input-form"
+                name="user-name"
+                placeholder=""
+                required
+              />
+              <svg class="icon-name" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="box-comment-user">
+            <label class="form-label" for="user-comment">Comment</label>
+            <textarea
+              class="text-comment-input"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <div class="box-checkbox">
+            <input
+              id="user-privacy"
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              value="true"
+              required
+            />
+            <label class="form-checkbox-label" for="user-privacy">
+              <span class="check">
+                <svg class="icon-check" width="10" height="10">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              <span class="text-privacy">
+                I accept the terms and conditions of the
+                <a class="link-privacy-user" href="#"> Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="button-overlay">Send</button>
+        </form>
+      </div>
+    </div>
     <script src="./js/mobil-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
