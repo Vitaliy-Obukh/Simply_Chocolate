@@ -53,7 +53,6 @@ img {
 
 /* <!-- ========= Header ========= --> */
 .box-header {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -505,6 +504,7 @@ img {
   color: #ffffff;
   display: flex;
   align-items: center;
+  cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -544,6 +544,17 @@ img {
   fill: #fd9222;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  animation: jump 1s infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @media screen and (min-width: 768px) {
