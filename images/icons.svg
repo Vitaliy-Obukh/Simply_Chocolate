@@ -25,5 +25,15 @@
         <symbol id="icon-scroll-down" viewBox="0 0 32 32"><path d="M16.947 17.867a1.334 1.334 0 0 1-1.894 0l-6.107-6.12a1.334 1.334 0 1 0-1.894 1.88l6.12 6.12a4.001 4.001 0 0 0 5.654 0l6.12-6.12a1.337 1.337 0 0 0-.434-2.172 1.331 1.331 0 0 0-1.46.292l-6.107 6.12z"/></symbol>
     <symbol id="icon-button-mobile-menu" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16h24M4 8h24M4 24h24"/></symbol>
     <symbol id="icon-close-mobile-menu" viewBox="0 0 32 32"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.286" d="M22.666 9.333 9.333 22.666m0-13.333 13.333 13.333"/></symbol>
-    </defs>
+   <symbol id="icon-ellipse" viewBox="0 0 32 32"><path stroke-width="4" d="M30 16c0 7.732-6.268 14-14 14S2 23.732 2 16 8.268 2 16 2s14 6.268 14 14z"/></symbol>
+<symbol id="icon-play" viewBox="0 0 32 32"><path fill="#f5f4f4" d="M11.886 23.771V10.057l12.8 6.857-12.8 6.857z" style="fill:var(--color1, #f5f4f4)"/><path fill="none" stroke="#fff" stroke-width=".914" d="M31.543 16c0 8.584-6.959 15.543-15.543 15.543S.457 24.584.457 16 7.416.457 16 .457 31.543 7.416 31.543 16z" style="stroke:var(--color2, #fff)"/></symbol>l></defs>
+<symbol id="icon-Rectangle-test" viewBox="0 0 71 32">
+<path fill="#fd9222" style="fill: var(--color1, #fd9222)" d="M54.154 0h-36.923c-8.837 0-16 7.163-16 16s7.163 16 16 16h36.923c8.837 0 16-7.163 16-16s-7.163-16-16-16z"></path>
+</symbol>
+<symbol id="icon-Rectangle-one" viewBox="0 0 34 32">
+<path d="M17.231 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16z"></path>
+</symbol>
+<symbol id="icon-Rectangle" viewBox="0 0 71 32">
+<path d="M54.154 0h-36.923c-8.837 0-16 7.163-16 16s7.163 16 16 16h36.923c8.837 0 16-7.163 16-16s-7.163-16-16-16z"></path>
+</symbol>
 </svg>
